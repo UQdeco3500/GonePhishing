@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Phish</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    </head> 
+    <body>
+      <script src = "script.js"></script>
+      <div class="container">
+      <h3>Who will you phish?</h3>
+      <img src="assets/phishfish.gif" alt="phish" style="width:10%;height:10%;">
+      </div>
+      <!-- haven't made php yet -->
+      <form phish="/phish_page.php">
+        <label for="uname">Username:</label><br>
+        <input type="text" id="uname" name="uname" placeholder=" Phishing Target"><br>
+        <label for="content">Phish:</label><br>
+        <textarea name="message" rows="10" cols="30" placeholder=" Craft your phish..."></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <div class="bottom-nav">
+        <a href="home.html">Home</a>
+        <a href="phish.html" class="active">Phish</a>
+        <a href="learn.html">Learn</a>
+        <a href="leaderboard.html">Leaders</a>
+      </div>
+      </body>
+      </html>

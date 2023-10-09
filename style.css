@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+
+/* style for body text */
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 26px;
+    color: #131A22;
+    text-align: center;
+    background-color: #2E495F;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+/* text for titles */
+h1 {
+    font-family: 'Nunito';
+    font-size: xx-large;
+    font-weight: bold;
+    color: #e6f0f8;
+    text-shadow: #112a41;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+h2 {
+    font-family: 'Nunito';
+    font-style: italic;
+    color: #e3ebf2;
+    font-size: large;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+h3 {
+    font-family: 'Nunito';
+    text-decoration: none;
+    color: #1c3a55;
+    font-size: medium;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+
+    /* login page css */
+
+    .login{
+        width: fit-content;
+        overflow: hidden;
+        margin: auto;
+        background: transparent;
+        border-radius: 5% ;
+        padding: 5%;
+        font-family: 'Nunito';
+  }
+
+  #Uname{
+      width: 100%;
+      height: 20%;
+      border: none;
+      padding-left: 2%;
+  }
+  #Pass{
+    width: 100%;
+    height: 20%;
+    border: none;
+    padding-left: 2%;
+  }
+
+  #login{
+    float: center;
+    font-family: 'Nunito';
+    font-size: medium;
+    color: rgb(114, 147, 253);
+}
+
+
+#log{
+    width: 100%;
+    height: 25%;
+    border-radius: 3%;
+    color:#0f2a44;
+    background-color: #b7d3e9;
+    font-family: 'Nunito';
+    font-size: medium;
+}
+
+  #log:hover{
+    width: 100%;
+    height: 25%;
+    border-radius: 3%;
+    color:#a4c7e7;
+    background-color: #2b597c;
+    font-family: 'Nunito';
+    font-size: medium;
+}
+
+  span{
+      color: white;
+      font-size: medium;
+  }
+
+  a {
+      float: right;
+      font-family: 'Nunito';
+      font-size: medium;
+      text-decoration: none;
+      color: rgb(114, 147, 253);
+  }
