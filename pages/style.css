@@ -36,7 +36,7 @@ h1 {
     font-weight: bold;
     color:#13334d;
     text-decoration-color: #6595b9;
-    font-size: 80px;
+    font-size: xx-large;
     text-align: center;
 }
 
@@ -133,6 +133,151 @@ div.topnav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+.release {
+  position: absolute;
+  width: 60%;
+  height: 8%;
+  bottom: 6%;
+  left: 5%;
+  background-color: #7f3ac0;
+  color:#bbd7ec;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.form-popup {
+  display:none;
+  justify-content: center;
+  top: 20%;
+  left: 10%;
+  position: fixed;
+  height: 50%;
+  width: 80%;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 100%;
+  padding: 5%;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=phish] {
+  width: 100%;
+  padding: 5%;;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .send {
+  background-color: #7db6eb;
+  color: white;
+  padding: 3%;
+  border:#131A22;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.sign {
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  height: 100;
+  padding: 5%;
+  background-color: #842bd8;
+  color:#bbd7ec;
+}
+
+.sign .back {
+  position: absolute;
+  width: 10%;
+  top: 10%;
+  left: 5%;
+  background-color: #bbd7ec;
+  color:#842bd8;
+  cursor: pointer;
+}
+
+.container {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.container img {
+  width: 100%;
+  height: 60%;
+  position: fixed;
+}
+
+.pondcontainer {
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  left: 10%;
+}
+
+.pondcontainer img {
+  width: 100%;
+  position: fixed;
+  height: 40%;
+}
+
+.container .btn {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #842bd8;
+  padding: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+.container .you {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width:5%;
+  height: 2%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #eb4513;
+  color: white;
+  cursor: pointer;
+}
+
+.container .you:hover::before {
+  position: absolute;
+  content:"You Are Here";
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #eb4513;
+  color: white;
+  cursor: pointer;
+}
+
+.container .btn:hover {
+  background-color: #3a135e;
 }
 
 .quizContainer{

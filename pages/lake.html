@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    </head> 
+    <body>
+
+        <div class = "container">
+            <img src="assets/sky.jpg">
+            <div class="sign">
+                <button class="back" onClick="back()">Go Back</button>
+                <p>Welcome to UQ Pond</p>
+            </div>
+            
+        </div>
+        <div class="pondcontainer">
+            <img src="assets/swim.gif">
+        </div>
+
+        <div>
+            <button class="release" onClick="releasePhish()">Release Phish</button>
+            
+        <div class="form-popup" id="myPhish">
+          <form action="/action_page.php" class="form-container">
+            <h2>Craft Your Phish</h2>
+            <input type="text" rows="10" placeholder="Write your phish here" name="phish" required>
+            <button type="button" class="send" onClick="byePhish()">Release Your Phish</button>
+            <button type="button" class="btn cancel" onclick="cancelPhish()">Close</button>
+
+          </form>
+        </div>
+           
+        </div>
+
+
+        <script>
+            function releasePhish() {
+              document.getElementById("myPhish").style.display = "block";
+            }
+            
+            function cancelPhish() {
+              document.getElementById("myPhish").style.display = "none";
+            }
+
+            function byePhish() {
+              alert("Your Phish is now in UQ Pond! Good luck!");
+              document.getElementById("myPhish").style.display = "none";
+            }
+      function back() {
+
+        location.href="phish.html";
+      }
+            </script>
+
+ 
+      
+
+      <div class="bottom-nav">
+        <a href="home.html">Home</a>
+        <a href="phish.html" class="active">Phish</a>
+        <a href="learn.html">Learn</a>
+        <a href="leaderboard.html">Leaders</a>
+      </div>
+            
+    </body>
+      </html>

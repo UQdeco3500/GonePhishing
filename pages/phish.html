@@ -6,19 +6,21 @@
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     </head> 
     <body>
-      <script src = "script.js"></script>
+        <h1>Nearby Phishing Spots</h1>
+        <br>
+        <h2>Where do you want to go?</h2>
+
       <div class="container">
-      <h3>Who will you phish?</h3>
-      <img src="assets/phishfish.gif" alt="phish" style="width:10%;height:10%;">
+        <img src="assets/map.webp" alt = "map">
+        <button class="btn" onClick = "selectLocation()">UQ Pond</button>
+        <button class="you"></button>
       </div>
-      <!-- haven't made php yet -->
-      <form phish="/phish_page.php">
-        <label for="uname">Username:</label><br>
-        <input type="text" id="uname" name="uname" placeholder=" Phishing Target"><br>
-        <label for="content">Phish:</label><br>
-        <textarea name="message" rows="10" cols="30" placeholder=" Craft your phish..."></textarea><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+     <script>
+      function selectLocation() {
+        alert("Travelling to UQ Pond!");
+        location.href="lake.html";
+      }
+      </script>
       <div class="bottom-nav">
         <a href="home.html">Home</a>
         <a href="phish.html" class="active">Phish</a>
