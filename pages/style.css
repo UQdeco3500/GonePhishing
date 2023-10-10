@@ -135,3 +135,67 @@ div.topnav {
   top: 0;
 }
 
+.quizContainer{
+  background-color: #fff;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color:rgb(221, 185, 140);
+  color: #76abdd;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#nextButton {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#nextButton:hover {
+  background-color: #0056b3;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#questionContainer {
+  text-align: center;
+}
+
+#buttonContainer {
+  margin-top: 20px;
+}
+
