@@ -84,7 +84,7 @@ h3 {
   /* Change the color of links on hover */
   .bottom-nav a:hover {
     background-color:rgb(221, 185, 140);
-    color: #76abdd;
+    color: #0e2e4b;
   }
   
   /* Add an active class to highlight the current page */
@@ -298,7 +298,7 @@ div.topnav {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  background-color: #007BFF;
+  background-color: #1e3751;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -306,7 +306,7 @@ div.topnav {
 
 .option:hover {
   background-color:rgb(221, 185, 140);
-  color: #76abdd;
+  color: #1d4061;
 }
 
 #feedback {
@@ -315,7 +315,7 @@ div.topnav {
 }
 
 #nextButton {
-  background-color: #007BFF;
+  background-color: #593a84;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -325,7 +325,7 @@ div.topnav {
 }
 
 #nextButton:hover {
-  background-color: #0056b3;
+  background-color: #272f76;
 }
 
 .buttonGrid {
