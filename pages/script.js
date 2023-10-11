@@ -19,7 +19,6 @@ const feedbackElement = document.getElementById("feedback");
 const nextButton = document.getElementById("nextButton");
 
 function loadQuestion() {
-    print(currentQuestionIndex)
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
 
