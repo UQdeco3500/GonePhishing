@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-
+  background-color:  #badaf8;
 }
 
 input[type=submit] {
@@ -27,8 +27,10 @@ body {
     font-size: 26px;
     color: #131A22;
     text-align: center;
-    background-color:#bbd7ec;
+    background-color: #badaf8;
 }
+
+
 
 /* text for titles */
 h1 {
@@ -36,6 +38,7 @@ h1 {
     font-weight: bold;
     color:#13334d;
     text-decoration-color: #6595b9;
+    background-color: transparent;
     font-size: xx-large;
     text-align: center;
 }
@@ -46,6 +49,7 @@ h2 {
     color: #6595b9;
     font-size: 36px;
     text-align: center;
+    background-color: transparent;
 }
 
 /* text for reflection*/
@@ -56,6 +60,16 @@ h3 {
     color: #13334d;
     font-size: 40px;
     text-align: center;
+    background-color: transparent;
+}
+
+.page {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 /* Add a black background color to the top navigation */
@@ -93,7 +107,6 @@ h3 {
     color:#1e3b59;
   }
 
-
   .logo {
     display: inline-block;
     vertical-align: top;
@@ -127,21 +140,28 @@ h3 {
     }
   }
 
-  /* keeps buttons at top when scrolling 
-adapted from: https://www.w3docs.com/tools/code-editor/9895 */
-div.topnav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+.lake-buttons {
+  display: flex;
+  justify-content: space-between; 
+  min-width: 70%;
+  min-height: 10%;
+  margin: 0 auto; 
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
 }
 
 .release {
-  position: absolute;
-  width: 60%;
-  height: 8%;
-  bottom: 6%;
-  left: 5%;
-  background-color: #7f3ac0;
+  width: 40%;
+  background-color: #1e3751;
+  color:#bbd7ec;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.catch {
+  width: 40%;
+  background-color: #1e3751;
   color:#bbd7ec;
   font-size: x-large;
   cursor: pointer;
@@ -194,12 +214,21 @@ div.topnav {
 
 .sign {
   position: absolute;
-  justify-content: center;
   width: 100%;
   height: 100;
   padding: 5%;
-  background-color: #842bd8;
+  background-color:#6595b9;
   color:#bbd7ec;
+}
+
+.leader {
+  position:relative;
+  width: 80vh;
+  height: 5vh;
+  padding: 1%;
+  justify-content: space-around;
+  background-color:#6595b9;
+  color:#214158;
 }
 
 .sign .back {
@@ -214,29 +243,21 @@ div.topnav {
 
 .container {
   position: fixed;
-  width: 80%;
-  left: 10%;
-  display: flex;
-  justify-content: center;
-}
-
-.container img {
-  width: 100%;
-  height: 60%;
-  position: fixed;
+  width:max-content;
+  justify-content: stretch;
 }
 
 .pondcontainer {
-  position: fixed;
-  width: 80%;
-  top: 50%;
-  left: 10%;
+  display: inline-block;
+  justify-content: center;
+  height: 80%;
+  padding-top: 20%;
 }
 
 .pondcontainer img {
   width: 100%;
-  position: fixed;
   height: 40%;
+  border: 5px solid #ccc;
 }
 
 .container .btn {
@@ -343,4 +364,3 @@ div.topnav {
 #buttonContainer {
   margin-top: 20px;
 }
-

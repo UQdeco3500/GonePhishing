@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    </head> 
-    <body>
 
-        <div class = "container">
-            <img src="assets/sky.jpg">
-            <div class="sign">
-                <button class="back" onClick="back()">Go Back</button>
-                <p>Welcome to UQ Pond</p>
-            </div>
-            
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="page">
+
+    <div class="sign">
+      <button class="back" onClick="back()">Go Back</button>
+      <h3>Welcome to... </h3> 
+    </div>
+
+
+  <div class="pondcontainer">
+    <h1>UQ Pond</h1>
+    <div class="leader">
+      <br><h3>top phisher:</h3> 
+      <h2>everydaybro</h2><br>
+    </div>
+    <br><br>
+    <img src="assets/swim.gif">
+  </div>
+
+  <div class="lake-buttons">
+    <button class="release" onClick="releasePhish()">Release Phish</button>
+    <button class="catch" data-toggle="modal" data-target="#exampleModal"> Catch Phish</button>
+</div>
+
+  <div class="form-popup" id="myPhish">
+    <form action="/action_page.php" class="form-container">
+      <h2>Craft Your Phish</h2>
+      <input type="text" rows="10" placeholder="Write your phish here" name="phish" required>
+      <button type="button" class="send" onClick="byePhish()">Release Your Phish</button>
+      <button type="button" class="btn cancel" onclick="cancelPhish()">Close</button>
+    </form>
+  </div>
+
+    <!-- used bootstrap - do i have to reference? -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img id="image" src="assets/catch.gif" alt="Click on button"/>
+          </div>
+          <h2>Looking for phish...</h2>
+          <div class="modal-footer justify-content-center">
+            <button class="btn btn-danger" data-dismiss="modal">
+              Cancel
+            </button>
+            <button class="btn btn-success" data-dismiss="modal">
+              Catch!!
+            </button>
+          </div>
         </div>
-        <div class="pondcontainer">
-            <img src="assets/swim.gif">
-        </div>
-
-        <div>
-            <button class="release" onClick="releasePhish()">Release Phish</button>
-            
-        <div class="form-popup" id="myPhish">
-          <form action="/action_page.php" class="form-container">
-            <h2>Craft Your Phish</h2>
-            <input type="text" rows="10" placeholder="Write your phish here" name="phish" required>
-            <button type="button" class="send" onClick="byePhish()">Release Your Phish</button>
-            <button type="button" class="btn cancel" onclick="cancelPhish()">Close</button>
-
-          </form>
-        </div>
-           
-        </div>
-
-
-        <script>
-            function releasePhish() {
-              document.getElementById("myPhish").style.display = "block";
-            }
-            
-            function cancelPhish() {
-              document.getElementById("myPhish").style.display = "none";
-            }
-
-            function byePhish() {
-              alert("Your Phish is now in UQ Pond! Good luck!");
-              document.getElementById("myPhish").style.display = "none";
-            }
-      function back() {
-
-        location.href="phish.html";
-      }
-            </script>
-
- 
-      
-
-      <div class="bottom-nav">
-        <a href="home.html">Home</a>
-        <a href="phish.html" class="active">Phish</a>
-        <a href="learn.html">Learn</a>
-        <a href="leaderboard.html">Leaders</a>
       </div>
-            
-    </body>
-      </html>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
+</div>
+
+
+  <div class="bottom-nav">
+    <a href="home.html">Home</a>
+    <a href="phish.html" class="active">Phish</a>
+    <a href="learn.html">Learn</a>
+    <a href="leaderboard.html">Leaders</a>
+  </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -59,3 +59,27 @@ function nextQuestion() {
 
 loadQuestion();
 nextButton.addEventListener("click", nextQuestion);
+
+function releasePhish() {
+    document.getElementById("myPhish").style.display = "block";
+  }
+
+
+  function cancelPhish() {
+    document.getElementById("myPhish").style.display = "none";
+  }
+
+  function byePhish() {
+    alert("Your Phish is now in UQ Pond! Good luck!");
+    document.getElementById("myPhish").style.display = "none";
+  }
+  function back() {
+
+    location.href = "phish.html";
+  }
+
+  function openWin() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+ 
