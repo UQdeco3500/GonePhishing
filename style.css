@@ -25,7 +25,7 @@ div {
 /* text for titles */
 h1 {
     font-family: 'Nunito';
-    font-size: xx-large;
+    font-size: 60px;
     font-weight: bold;
     color: #e6f0f8;
     text-shadow: #112a41;
@@ -37,7 +37,7 @@ h2 {
     font-family: 'Nunito';
     font-style: italic;
     color: #e3ebf2;
-    font-size: large;
+    font-size: 50px;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 1%;
@@ -55,6 +55,11 @@ h3 {
 
 
     /* login page css */
+
+    .title {
+        display: inline-flex;
+        top: 50%;
+    }
 
     .login{
         width: fit-content;

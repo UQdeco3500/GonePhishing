@@ -153,6 +153,10 @@ header i {
     color:#1e3b59;
   }
 
+  a {
+    color: #1e3b59;
+  }
+
   .logo {
     display: inline-block;
     vertical-align: top;
