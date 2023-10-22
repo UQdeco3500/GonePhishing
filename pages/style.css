@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-  background-color:  #badaf8;
+  background-color:  #e2f2ff;
 }
 
 input[type=submit] {
@@ -23,11 +23,13 @@ div {
 /* style for body text */
 body {
     padding-top: 1;
+    margin: 0;
+    display: flex;
     font-family: 'Nunito';
     font-size: 26px;
     color: #131A22;
     text-align: center;
-    background-color: #badaf8;
+    background-color: transparent;
 }
 
 
@@ -73,26 +75,70 @@ h3 {
 }
 
 /* Add a black background color to the top navigation */
+header {
+  background-color: #A2C4DF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  display: flex;
+  font-size: 40px;
+  justify-content: space-between;
+}
+
+header .tab {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  width: 60%;
+  padding: 5px;;
+  display: flex;
+  flex: 1;
+  border: 5px solid #e2f2ff;;
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: none;
+}
+
+header i {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  right: 0;
+  top: 35%;
+  justify-self: center;
+  padding: 20px;
+  position: absolute;
+}
+
 .bottom-nav {
-    background-color:#13334d;
-    overflow: hidden;
+    background-color:#2E495F;
+    justify-content: space-between;
+    display: flex;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 5%;
+    height: 8vh;
+  }
+
+  i {
+    background-color: transparent;
   }
   
   /* Style the links inside the navigation bar */
   .bottom-nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 2%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    font-size: large;
-    width: 100%;
-
+    background-color: transparent;
+    color: #A2C4DF;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
   }
   
   /* Change the color of links on hover */
@@ -182,6 +228,28 @@ h3 {
   max-width: 100%;
   padding: 5%;
   background-color: white;
+}
+
+.page {
+  padding-top: 20vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 80vh;
+  justify-self: center;
+  display: inline-block;
+}
+
+.map-container img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .form-container input[type=text], .form-container input[type=phish] {
@@ -302,6 +370,8 @@ h3 {
 }
 
 .quizContainer{
+  top: 20%;
+  position: absolute;
   background-color: #fff;
   padding:20px;
   height: 40vh;

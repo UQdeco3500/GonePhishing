@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Learn</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    </head> 
-    <body id ="learnBody">
-      <div>
-        <p> Phishing is bad. Do not phish pls. </p>
-      </div>
-      <div class="quizContainer" id="pageContent">
-        <div id="first_buttons">
-          <button id="TL_button" class="levelButton"> &#10003</button>
-          <a id="MM_button" class="levelButton" href="learnquiz.html"> Go</a>
-          <button id="BR_button" class="levelButton"> &#128274</button>
-        </div>
-      </div>
-      <div class="bottom-nav">
-        <a href="home.html">Home</a>
-        <a href="phish.html">Phish</a>
-        <a href="learn.html" class="active">Learn</a>
-        <a href="leaderboard.html">Leaders</a>
-      </div>
-      <script src="script.js"></script>
-    </body>
-    </html>
+
+<head>
+  <title>Phish</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="tab">
+      <h1>Learn</h1>
+    </div>
+    <br>
+    <i class="fa fa-user-circle-o"></i>
+  </header>
+
+  <div class="page">
+
+  <div class="quizContainer">
+    <div id="questionContainer">
+      <p id="question"></p>
+    </div>
+    <div id = "answers" class="buttonGrid">
+      <!-- <button class="option" id="option1"></button>
+      <button class="option" id="option2"></button>
+      <button class="option" id="option3"></button>
+      <button class="option" id="option4"></button> -->
+    </div>
+    <p id="feedback"></p>
+    <button id="nextButton">Next Learning Task</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div class="bottom-nav">
+    <a href="home.html"><i class="fa fa-home" style="justify-content: stretch;"></i></a>
+    <a href="learn.html" class="active"><i class='fa fa-bullseye'></i></a>
+    <a href="phish.html"><i class='fa fa-binoculars'></i></a>
+    <a href="leaderboard.html"><i class='fa fa-trophy'></i></a>
+    <a href="leaderboard.html"><i class='fa fa-users'></i></a>
+  </div>
+</body>
+
+</html>

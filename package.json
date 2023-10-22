@@ -1,0 +1,19 @@
+{
+  "name": "gonephishing",
+  "version": "1.0.0",
+  "description": "***\r ## Link To Project Proposal\r link to wiki page here containing proposal slides",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UQdeco3500/GonePhishing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UQdeco3500/GonePhishing/issues"
+  },
+  "homepage": "https://github.com/UQdeco3500/GonePhishing#readme"
+}
