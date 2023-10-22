@@ -378,6 +378,8 @@ header i {
   position: absolute;
   background-color: #fff;
   padding:20px;
+  height: 40vh;
+  width: 80%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   margin: 20px auto;
@@ -386,6 +388,7 @@ header i {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .option {
@@ -437,4 +440,46 @@ header i {
 
 #buttonContainer {
   margin-top: 20px;
+}
+
+#first_buttons {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.levelButton {
+  font-size: 16px;
+  height: 75px;
+  width: 75px;
+  margin-bottom: 50px;
+  border: 10px solid #2E495F;
+  border-radius: 50%;
+  background-color: #A2C4DF;
+  font-size: 20px;
+}
+
+#TL_button,#MM_button,#BR_button {
+  margin: 10px 0;
+}
+
+#TL_button {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+#MM_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#BR_button {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
 }
