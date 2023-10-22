@@ -6,16 +6,18 @@
         <link rel="stylesheet" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     </head> 
-    <body id ="learnBody">
+    <body>
       <div>
         <p> Phishing is bad. Do not phish pls. </p>
       </div>
-      <div class="quizContainer" id="pageContent">
-        <div id="first_buttons">
-          <button id="TL_button" class="levelButton"> &#10003</button>
-          <a id="MM_button" class="levelButton" href="learnquiz.html"> Go</a>
-          <button id="BR_button" class="levelButton"> &#128274</button>
+      <div class="quizContainer">
+        <div id="questionContainer">
+          <p id="question"></p>
         </div>
+        <div id = "answers" class="buttonGrid">
+        </div>
+        <p id="feedback"></p>
+        <button id="nextButton">Next Learning Task</button>
       </div>
       <div class="bottom-nav">
         <a href="home.html">Home</a>
@@ -23,6 +25,6 @@
         <a href="learn.html" class="active">Learn</a>
         <a href="leaderboard.html">Leaders</a>
       </div>
-      <script src="script.js"></script>
+      <script src="scriptquiz.js"></script>
     </body>
     </html>
