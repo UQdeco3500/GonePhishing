@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Phish</title>
-        <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    </head> 
-    <body>
-        <h1>Nearby Phishing Spots</h1>
-        <br>
-        <h2>Where do you want to go?</h2>
 
-      <div class="container">
-        <img src="assets/map.webp" alt = "map">
-        <button class="btn" onClick = "selectLocation()">UQ Pond</button>
-        <button class="you"></button>
-      </div>
-     <script>
-      function selectLocation() {
-        alert("Travelling to UQ Pond!");
-        location.href="lake.html";
-      }
-      </script>
-      <div class="bottom-nav">
-        <a href="home.html">Home</a>
-        <a href="phish.html" class="active">Phish</a>
-        <a href="learn.html">Learn</a>
-        <a href="leaderboard.html">Leaders</a>
-      </div>
-      </body>
-      </html>
+<head>
+  <title>Phish</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="tab">
+      <h1>Phish</h1>
+    </div>
+    <br>
+    <i class="fa fa-user-circle-o"></i>
+  </header>
+
+  <div class="page">
+    <div class="map-container">
+      <img src="assets/mapPonds.png" alt="phishmap" usemap="#map">
+      <map name="map">
+        <area shape="circle" coords="270, 450, 50" href="lake.html" alt="lake">
+      </map>
+
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="home.html"><i class="fa fa-home" style="justify-content: stretch;"></i></a>
+    <a href="learn.html"><i class='fa fa-bullseye'></i></a>
+    <a href="phish.html" class="active"><i class='fa fa-binoculars'></i></a>
+    <a href="leaderboard.html"><i class='fa fa-trophy'></i></a>
+    <a href="leaderboard.html"><i class='fa fa-users'></i></a>
+  </div>
+</body>
+
+</html>
