@@ -391,6 +391,10 @@ header i {
   position: relative;
 }
 
+p {
+  background-color: transparent;
+}
+
 .option {
   display: block;
   width: 100%;
@@ -431,11 +435,13 @@ header i {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   justify-content: center;
+  background-color: transparent;
   align-items: center;
 }
 
 #questionContainer {
   text-align: center;
+  background-color: transparent;
 }
 
 #buttonContainer {

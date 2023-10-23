@@ -13,6 +13,7 @@ body {
     text-align: center;
     background-color: #2E495F;
     justify-content: center;
+    display: flex;
     min-height: 100vh;
 }
 
@@ -25,8 +26,8 @@ div {
 /* text for titles */
 h1 {
     font-family: 'Nunito';
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 100px;
+    font-weight: bolder;
     color: #e6f0f8;
     text-shadow: #112a41;
     text-align: center;
@@ -37,7 +38,7 @@ h2 {
     font-family: 'Nunito';
     font-style: italic;
     color: #e3ebf2;
-    font-size: 50px;
+    font-size: 70px;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 1%;
@@ -47,9 +48,21 @@ h3 {
     font-family: 'Nunito';
     text-decoration: none;
     color: #1c3a55;
-    font-size: medium;
+    font-size: 40px;
     text-align: center;
+    padding-bottom: 5%;
     padding-top: 5%;
+}
+
+p {
+    font-family: 'Nunito';
+    color: #e3ebf2;
+    font-size: 30px;
+    text-align: center;
+    width: fit-content;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-top: 10px;
     padding-bottom: 1%;
 }
 
@@ -57,59 +70,81 @@ h3 {
     /* login page css */
 
     .title {
-        display: inline-flex;
-        top: 50%;
+        position: absolute;
+        justify-content: center;
+        display: inline-block;
+        top: 15vh;
     }
 
     .login{
         width: fit-content;
+        display: inline;
         overflow: hidden;
-        margin: auto;
+        min-width: 60%;
         background: transparent;
         border-radius: 5% ;
         padding: 5%;
         font-family: 'Nunito';
+        position: absolute;
+        bottom: 20vh;
+  }
+
+  .logo {
+    display: inline-block;
+    position: absolute;
+    min-width: 50%;
+    min-height: 25%;
+    top: 30vh;
+  }
+
+  .logo img {
+    width: 100%;
+    object-fit: cover;
   }
 
   #Uname{
       width: 100%;
-      height: 20%;
+      height: 4vh;
       border: none;
+      font-family: 'Nunito';
+      font-size: 40px;
       padding-left: 2%;
+      border-radius: 10px;
   }
   #Pass{
     width: 100%;
-    height: 20%;
+    height: 4vh;
     border: none;
+    font-family: 'Nunito';
+    font-size: 40px;
     padding-left: 2%;
+    border-radius: 10px;
   }
 
   #login{
     float: center;
     font-family: 'Nunito';
-    font-size: medium;
+    font-size: large;
     color: rgb(114, 147, 253);
 }
 
 
 #log{
     width: 100%;
-    height: 25%;
-    border-radius: 3%;
+    height: 4.5vh;
     color:#0f2a44;
     background-color: #b7d3e9;
+    border-radius: 10px;
     font-family: 'Nunito';
-    font-size: medium;
 }
 
   #log:hover{
     width: 100%;
-    height: 25%;
-    border-radius: 3%;
+    height: 4.5vh;
     color:#a4c7e7;
     background-color: #2b597c;
+    border-radius: 10px;
     font-family: 'Nunito';
-    font-size: medium;
 }
 
   span{
@@ -120,8 +155,10 @@ h3 {
   a {
       float: right;
       font-family: 'Nunito';
-      font-size: medium;
+      font-size: 30px;
       text-decoration: none;
+      padding-left: 10px;
       color: rgb(114, 147, 253);
   }
+
 
