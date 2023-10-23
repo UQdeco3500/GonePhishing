@@ -67,7 +67,7 @@ h3 {
 
 
 .page {
-  padding-top: 15vh;
+  padding-top: 8vh;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +75,7 @@ h3 {
   width: 100%;
   height: 100%;
   text-align: center;
+  flex-direction: column;
   position: absolute;
 }
 
@@ -194,6 +195,60 @@ header i {
     }
   }
 
+  .page .home-page {
+    background-color: #A2C4DF;
+    border: 10px solid #13334d;
+    width: 80%;
+    position: relative;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    margin: 40px 0;
+  }
+
+  .page .home-page button {
+    position: absolute;
+    display: block;
+    background-color: #13334d;
+    color: white;
+    padding: 3%;
+    top: 90%;
+    min-width: 40%;
+    left: 60%;
+  }
+
+  .page .home-page img {
+    padding-top: 5%;
+    width: 13vh;
+    background-color: transparent;
+  }
+
+  .page .home-page h1{
+    display: block;
+    float: inline-start;
+    position: absolute;
+    bottom: 90%;
+    padding: 2%;
+    font-size: 25px;
+    border: 8px solid #13334d;
+    background-color: #e2f2ff;
+  }
+
+  .page .home-page .user-container {
+    display: inline-block;
+    padding-top: 10px;
+    background-color: transparent;
+    text-align: center;
+    color: #13334d;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .page .home-page .user-container img {
+    width: 40px;
+    height:fit-content;
+  }
+
 .lake-buttons {
   display: inline-block;
   justify-content: space-between; 
@@ -243,12 +298,43 @@ header i {
   width: 100%;
   height: 80vh;
   justify-self: center;
+  position: absolute;
+  top: 28vh;
   display: inline-block;
 }
 
 .map-container img {
   width: 100%;
   object-fit: cover;
+}
+
+.page .top-phisher {
+  display: inline-block;
+  position: absolute;
+  border: 5px solid #13334d;
+  font-size: 20px;
+  background-color: #A2C4DF;
+  top: 15vh;
+  height: 10vh;
+  width: 100%;
+}
+
+.page .top-phisher b {
+  background-color: transparent;
+}
+
+.page .top-phisher img {
+  max-width: 50px;
+  display: inline;
+}
+
+.page .top-phisher p {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .form-container input[type=text], .form-container input[type=phish] {
@@ -262,8 +348,6 @@ header i {
   background-color: #ddd;
   outline: none;
 }
-
-
 
 .form-container .cancel {
   background-color: red;
@@ -454,4 +538,43 @@ p {
   position: absolute;
   bottom: 0;
   right: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  display: table;
+  width: 80%;
+  top: 25vh;
+  position: absolute;
+  font-weight: bold;
+}
+
+table img {
+  width: 80px;
+  padding-right: 20px;
+  background-color: transparent;
+}
+
+th {
+  background-color: #13334d;
+  border: 1px solid #13334d;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+td {
+  border: 10px solid #e2f2ff;
+  border-left: #A2C4DF;
+  border-right: #A2C4DF;
+  background-color: #A2C4DF;
+  padding: 10px;
+  text-align: left;
+  color:#13334d;
+}
+
+.page .heading {
+  display: inline-flex;
+  position: absolute;
+  top: 15vh;
 }
