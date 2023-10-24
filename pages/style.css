@@ -349,9 +349,23 @@ div#popup {
   top: 20%;
   left: 10%;
   position: fixed;
-  height: 50%;
+  border: 5px solid #13334d;
+  height: auto;
   width: 80%;
+  border-radius: 10px;
+  padding: 10px;
   z-index: 9;
+}
+
+.phish-popup .catch {
+  min-height: 60px;
+}
+
+.phish-popup h3 {
+  font-size: 24px;
+}
+.phish-popup p {
+  font-size: 20px;
 }
 
 .phish-container {
@@ -363,6 +377,29 @@ div#popup {
 .phish {
   height: 60px;
   color: #13334d;
+  font-size: 16px;
+  justify-content: space-between;
+  display: inline-flex;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+#lv1t {
+  background-color: #e2f2ff;
+}
+#lv1e {
+  background-color: #e2f2ff;
+}
+#lv2t {
+  background-color: #e2f2ff;
+}
+#lv2t {
+  background-color: #e2f2ff;
+}
+.phish .active {
+  height: 60px;
+  color: #ffffff;
+  background-color: #1d4061;
   font-size: 16px;
   justify-content: space-between;
   display: inline-flex;
@@ -434,19 +471,32 @@ div#popup {
   outline: none;
 }
 
-.form-container .cancel {
+.phish-container .cancel {
   background-color: red;
+  padding: 5px;
 }
 
-.form-container .send {
+.phish-container .send {
   background-color: #7db6eb;
-  color: white;
+  color: #1d4061;
+  font-weight: bold;
   padding: 3%;
-  border:#131A22;
+  border: 4px solid #1d4061;
+  margin-top: 20px;
   cursor: pointer;
   width: 100%;
 }
 
+.phish-popup img {
+  padding-top: 5%;
+  max-width: 100%;
+  top: 0;
+  background-color: transparent;
+}
+
+.phish-popup i {
+  font-size: 16px;
+}
 
 .sign {
   position: absolute;
@@ -514,6 +564,7 @@ div#popup {
   position: absolute;
   padding:20px;
   height: 40vh;
+  min-height: 40vh;
   width: 80%;
   margin: 20px auto;
   max-width: 700px;
@@ -530,7 +581,8 @@ div#popup {
   background-color: white;
   padding:20px;
   border: 5px solid #13334d;
-  height: 40vh;
+  height: auto;
+  min-height: 40vh;
   width: 80%;
   font-family: 'Nunito';
   margin: 20px auto;
@@ -545,6 +597,11 @@ div#popup {
 p {
   background-color: transparent;
   padding-bottom: 10px;
+}
+
+.home-page h2 {
+  font-size: 24px;
+  color: #13334d;
 }
 
 .option {
@@ -567,9 +624,10 @@ p {
 
 #feedback {
   bottom: 15%;
-  position: absolute;
-  background-color: #e2f2ff;
+  position: relative;
+  background-color: white;
   font-weight: bold;
+  padding: 10px;
 }
 
 #score {

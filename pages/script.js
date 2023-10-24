@@ -43,15 +43,23 @@ function handleButtonClick(buttonId) {
 }
 
 
-
 function releasePhish() {
     document.getElementById("myPhish").style.display = "block";
 }
 
-
 function cancelPhish() {
     document.getElementById("myPhish").style.display = "none";
 }
+
+function activatePhish(id) {
+    document.getElementById("myPhish").style.display = "block";
+    if (document.getElementById(id).style.backgroundColor == "rgb(162, 196, 223)") {
+        document.getElementById(id).style.backgroundColor = "#e2f2ff";
+    }
+    else {
+        document.getElementById(id).style.backgroundColor = "#A2C4DF";
+    }
+} 
 
 function byePhish() {
     alert("Your Phish is now in UQ Pond! Good luck!");
@@ -66,7 +74,27 @@ function openWin() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+function catchPhish() {
+    document.getElementById("goPhish").style.display = "block";
+        setTimeout(function() {
+            document.getElementById("goPhish").style.display = "none";
+        }, 3000);
+        setTimeout(function() {
+            document.getElementById("caught-phish").style.display = "block";
+        }, 3000);
+}
 
-function activatePhish() {
-    document.getElementById("button").style.backgroundColor = "lightblue";
+function right() {
+    document.getElementById("caught-phish").style.display = "none";
+    document.getElementById("congrats").style.display = "block";
+}
+
+function wrong() {
+    document.getElementById("caught-phish").style.display = "none";
+    document.getElementById("incorrect").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("congrats").style.display = "none";
+    document.getElementById("incorrect").style.display = "none";
 }

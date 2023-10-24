@@ -106,24 +106,51 @@
 
       <div class="lake-buttons">
         <button class="release" onClick="releasePhish()">Release a Phish</button>
-        <button class="catch" data-toggle="modal" data-target="#exampleModal"> Catch a Phish</button>
+        <button class="catch" onClick="catchPhish()"> Catch a Phish</button>
       </div>
   
       <div class="phish-popup" id="myPhish">
         <form class="phish-container">
           <h2>Select a Phish</h2>
           <div class="buttonGrid">
-          <button class="phish" onClick="activatePhish()"><i class="fa fa-star"></i>lv1 email phish</button>
-          <button class="phish"><i class="fa fa-star"></i>lv1 text phish</button>
-          <button class="phish"><i class="fa fa-star"></i>lv2 email phish</button>
-          <button class="phish"><i class="fa fa-star"></i>lv2 text phish</button>
-        </div>
+            <button type="button" class="phish" id="lv1e" onClick="activatePhish(id)"><i class="fa fa-star"></i>lv1 email phish</button>
+            <button type="button" class="phish" id="lv1t" onClick="activatePhish(id)"><i class="fa fa-star"></i>lv1 text phish</button>
+            <button type="button" class="phish" id="lv2e" onClick="activatePhish(id)"><i class="fa fa-star"></i>lv2 email phish</button>
+            <button type="button" class="phish" id="lv2t" onClick="activatePhish(id)"><i class="fa fa-star"></i>lv2 text phish</button>
+          </div>
           <button type="button" class="send" onClick="byePhish()">Release Your Phish</button>
           <button type="button" class="btn cancel" onclick="cancelPhish()">Close</button>
         </form>
       </div>
 
+      <div class="phish-popup" id="goPhish"S>
+        <img src="assets/catch.gif">
+        <h3>Fishing <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></h3>
+      </div>
 
+      <div class="phish-popup" id="caught-phish">
+        <h3>You found something!</h3>
+        <p>If it's a Phish, catch it! Otherwise you'd better release it.</p>
+        <img class="caught-fish" src="assets/not-phish.png">
+        <button type="button" class="catch" onClick="wrong()">Catch!</button>
+        <button type="button" class="catch" onclick="right()">Release</button>
+      </div>
+      
+      <div class="phish-popup" id="congrats">
+        <img src="assets/fish.gif">
+        <h3>Fin-tastic!</h3>
+        <p>Nothing Phishy about this message (it's just a fish)</p>
+        <p>+10 points</p>
+        <button type="button" class="catch" onClick="closePopup()">Back to Pond</button>
+      </div>
+
+      <div class="phish-popup" id="incorrect">
+        <img src="assets/incorrect.gif">
+        <h3>Uh Oh... </h3>
+        <p>You caught an innocent fish, guess that makes you gill-ty.</p>
+        <p>-10 points</p>
+        <button type="button" class="catch" onClick="closePopup()">Back to Pond</button>
+      </div>
 
   </div>
 
