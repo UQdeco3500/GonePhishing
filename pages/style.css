@@ -607,7 +607,7 @@ td {
 
 .levelBanner {
   background-color: #2E495F;
-  width: 700px; 
+  width: 100%; 
   border-bottom: #FFF;
   border-radius: 2px;
   border-color: #FFF;
@@ -615,5 +615,5 @@ td {
 
 .levelBannerText{
   color: #fff;
-  width: 700px; 
+  width: 100%; 
 }
