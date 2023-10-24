@@ -20,7 +20,44 @@
   </header>
 
   <div class="page">
-   <h1>email a phish</h1>
+    <div class="email-page">
+      <h1>Email a Phish</h1>
+  
+      <div class="user-container" id="easy-container">
+        <div class="form-row">
+          <img src="assets/phish_send_light.PNG" alt="Email Phish Easy" id="easy-image" data-attachment="image/png">
+          Email Phish Easy
+        </div>
+      </div>
+  
+      <div class="user-container" id="medium-container">
+        <div class="form-row">
+          <img src="assets/phish_send_light.PNG" alt="Email Phish Medium" id="medium-image" data-attachment="image/jpeg">
+          Email Phish Medium
+        </div>
+      </div>
+  
+      <div class="user-container" id="hard-container">
+        <div class="form-row">
+          <img src="assets/phish_send_light.PNG" alt="Email Phish Hard" id="hard-image" data-attachment="image/png">
+          Email Phish Hard
+        </div>
+      </div>
+  
+      
+      <form target="_blank" action="https://formsubmit.co/luke_cr0nin@hotmail.com" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <div class="form-control" name="message">
+            <div id="attachments">
+            </div>
+          </div>
+        </div>
+        <input type="file" id="file-input" name="attachment" accept="image/png, image/jpeg" style="display: none;">
+        <label for="file-input" id="file-label" style="display: none;">Choose an attachment</label>
+        <button type="submit" id="send-button" style="display: none;">Send email</button>
+      </form>
+  
+    </div>
   </div>
 
   <div class="bottom-nav">
