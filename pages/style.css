@@ -835,3 +835,7 @@ td {
 .page .email-page input {
   padding: 10px;
 }
+
+#easy-container {
+  padding-top: 5vh;
+}
