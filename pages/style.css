@@ -613,6 +613,14 @@ td {
   border-color: #FFF;
 }
 
+.levelBannerLock {
+  background-color: #8b8e91;
+  width: 100%; 
+  border-bottom: #FFF;
+  border-radius: 2px;
+  border-color: #FFF;
+}
+
 .levelBannerText{
   color: #fff;
   width: 100%; 
