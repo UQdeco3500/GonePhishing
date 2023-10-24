@@ -425,20 +425,33 @@ header i {
 
 .quizContainer{
   top: 20vh;
-  position: absolute;
-  background-color: #fff;
+  background-color: #e2f2ff;
   padding:20px;
   height: 40vh;
   width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   margin: 20px auto;
   max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: absolute;
+  justify-content: center;
+}
+
+.quizContainer2{
+  top: 20vh;
+  background-color: #e2f2ff;
+  padding:20px;
+  height: 40vh;
+  width: 80%;
+  margin: 20px auto;
+  max-width: 700px;
+  padding-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 p {
@@ -517,6 +530,17 @@ p {
   font-size: 20px;
 }
 
+.levelButtonLock {
+  font-size: 16px;
+  height: 75px;
+  width: 75px;
+  margin-bottom: 50px;
+  border: 10px solid #8b8e91;
+  border-radius: 50%;
+  background-color: #A2C4DF;
+  font-size: 20px;
+}
+
 #TL_button,#MM_button,#BR_button {
   margin: 10px 0;
 }
@@ -528,6 +552,8 @@ p {
 }
 
 #MM_button {
+  text-decoration: none;
+  padding-top: 13px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -577,4 +603,17 @@ td {
   display: inline-flex;
   position: absolute;
   top: 15vh;
+}
+
+.levelBanner {
+  background-color: #2E495F;
+  width: 700px; 
+  border-bottom: #FFF;
+  border-radius: 2px;
+  border-color: #FFF;
+}
+
+.levelBannerText{
+  color: #fff;
+  width: 700px; 
 }

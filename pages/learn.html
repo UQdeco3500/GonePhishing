@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id ="learnBody">
   <header>
     <div class="tab">
       <h1>Learn</h1>
@@ -20,22 +20,24 @@
   </header>
 
   <div class="page">
-    <div class="quizContainer">
-      <div id="questionContainer">
-        <p id="question"></p>
+    <div class="quizContainer" id="pageContent">
+      <div class = "levelBanner">
+          <p class = "levelBannerText">Level 1</p>
       </div>
-      <div id = "answers" class="buttonGrid">
+      <div class = "levelBanner">
+        <p class = "levelBannerText">Level 2</p>
       </div>
-      <p id="feedback"></p>
-      <button id="nextButton">Next Learning Task</button>
+      <div id="first_buttons">
+        <button id="TL_button" class="levelButton"> &#10003</button>
+        <a id="MM_button" class="levelButton" href="learnquiz.html"> Go</a>
+        <button id="BR_button" class="levelButtonLock"> &#128274</button>
+      </div>
+      <div class = "levelBanner">
+        <p class = "levelBannerText">Level 3</p>
+      </div>
     </div>
-    <div class="bottom-nav">
-      <a href="home.html">Home</a>
-      <a href="phish.html">Phish</a>
-      <a href="learn.html" class="active">Learn</a>
-      <a href="leaderboard.html">Leaders</a>
-    </div>
-    <script src="scriptquiz.js"></script>
+  </div>
+  <script src="script.js"></script>
 
   <div class="bottom-nav">
     <a href="home.html"><i class="fa fa-home" style="justify-content: stretch;"></i></a>
