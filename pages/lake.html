@@ -89,19 +89,45 @@
 
   <div class="page">
 
-    <div>
-
-      <h1>UQ Pond</h1>
-      <button class="back" onClick="back()">Go Back</button>
+    <div class="top-phisher">
+      <b>Current #1 Phisher at this lake:</b><br>
+      <p><img src="assets/profile-fish.png">h3yd4n</p>
     </div>
 
-      <div class="map-container">
+<div class="heading">
+  <div class="lake">
+  <h1>Welcome to </h1>
+  <h2>UQ Lakes Pond</h2>
+</div>
+</div>
+      <div class="lake-page">
         <img src="assets/swim.gif">
+      </div>
+
+      <div class="lake-buttons">
+        <button class="release" onClick="releasePhish()">Release a Phish</button>
+        <button class="catch" data-toggle="modal" data-target="#exampleModal"> Catch a Phish</button>
+      </div>
+  
+      <div class="phish-popup" id="myPhish">
+        <form class="phish-container">
+          <h2>Select a Phish</h2>
+          <div class="buttonGrid">
+          <button class="phish" onClick="activatePhish()"><i class="fa fa-star"></i>lv1 email phish</button>
+          <button class="phish"><i class="fa fa-star"></i>lv1 text phish</button>
+          <button class="phish"><i class="fa fa-star"></i>lv2 email phish</button>
+          <button class="phish"><i class="fa fa-star"></i>lv2 text phish</button>
+        </div>
+          <button type="button" class="send" onClick="byePhish()">Release Your Phish</button>
+          <button type="button" class="btn cancel" onclick="cancelPhish()">Close</button>
+        </form>
       </div>
 
 
 
   </div>
+
+  <script src="script.js"></script>
 
   <div class="bottom-nav">
     <a href="home.html"><i class="fa fa-home" style="justify-content: stretch;"></i></a>

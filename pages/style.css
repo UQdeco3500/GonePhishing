@@ -67,16 +67,18 @@ h3 {
 
 
 .page {
-  padding-top: 8vh;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  top: 12vh;
   width: 100%;
-  height: 100%;
+  height: 80%;
   text-align: center;
   flex-direction: column;
   position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Add a black background color to the top navigation */
@@ -86,7 +88,7 @@ header {
   left: 0;
   width: 100%;
   height: 12vh;
-  position: fixed;
+  position: absolute;
   display: flex;
   font-size: 40px;
   justify-content: space-between;
@@ -201,17 +203,22 @@ header i {
     width: 80%;
     position: relative;
     border-radius: 5px;
-    display: block;
+    display: inline-block;
     padding: 10px;
     margin: 40px 0;
   }
 
   .page .home-page button {
     position: absolute;
+    font-family:'Nunito';
     display: block;
-    background-color: #13334d;
-    color: white;
-    padding: 3%;
+    font-size: 16px;
+    font-weight: bold;
+    border: 4px solid #1d4061;
+    border-radius: 10px;
+    background-color: #e2f2ff;
+    color: #1d4061;
+    padding: 4px;
     top: 90%;
     min-width: 40%;
     left: 60%;
@@ -220,6 +227,8 @@ header i {
   .page .home-page img {
     padding-top: 5%;
     width: 13vh;
+    position: relative;
+    top: 0;
     background-color: transparent;
   }
 
@@ -236,9 +245,10 @@ header i {
 
   .page .home-page .user-container {
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 3px;
     background-color: transparent;
     text-align: center;
+    width: 100%;
     color: #13334d;
     font-weight: bold;
     font-size: 20px;
@@ -249,34 +259,91 @@ header i {
     height:fit-content;
   }
 
+div#popup { 
+  width:200px;
+  height:130px;
+  background-color: #e2f2ff;
+  position:absolute;
+  margin-top: -50%;
+  margin-left:30%;
+  border: 4px solid #A2C4DF;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.map-container button {
+  padding: 4px;
+  background-color: #13334d;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Nunito';
+  border: none;
+}
+.map-container .delete {
+  padding: 2px;
+  background-color: #7c2134;
+  color: white;
+  font-family: 'Nunito';
+  border-radius: 10px;
+}
+
+.page .lake-page {
+  background-color: #e2f2ff;
+  border: 6px solid #A2C4DF;
+  width: 90%;
+  height:fit-content;
+  position: relative;
+  justify-content: center;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
+  margin: 40px 0;
+}
+
+.page .lake-page img {
+  padding-top: 5%;
+  max-width: 100%;
+  top: 0;
+  background-color: transparent;
+}
+
 .lake-buttons {
   display: inline-block;
-  justify-content: space-between; 
+  padding: 10px;
+  border: 6px solid #A2C4DF;
+  border-radius: 10px;
+  justify-content: space-around; 
   min-width: 70%;
   min-height: 10%;
   margin: 0 auto; 
   position: absolute;
-  bottom: 20vh;
-  left: 15%;
+  bottom: 10vh;
 }
 
 .release {
   width: 40%;
-  background-color: #1e3751;
-  color:#bbd7ec;
-  font-size: x-large;
+  font-weight: bold;
+  background-color: #A2C4DF;
+  color:#1e3751;
+  font-size: 20px;
   cursor: pointer;
+  margin-right: 20px;
+  border: 3px solid #1e3751;
+  border-radius: 10px;
 }
 
 .catch {
   width: 40%;
-  background-color: #1e3751;
-  color:#bbd7ec;
-  font-size: x-large;
+  background-color: #A2C4DF;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #1e3751;
+  border-radius: 10px;
+  color: #1e3751;
   cursor: pointer;
 }
 
-.form-popup {
+.phish-popup {
   display:none;
   justify-content: center;
   top: 20%;
@@ -287,10 +354,28 @@ header i {
   z-index: 9;
 }
 
-.form-container {
+.phish-container {
   max-width: 100%;
   padding: 5%;
   background-color: white;
+}
+
+.phish {
+  height: 60px;
+  color: #13334d;
+  font-size: 16px;
+  justify-content: space-between;
+  display: inline-flex;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.phish i {
+  display: flex;
+  padding-left: 5px;
+  font-size: 40px;
+  color: #13334d;
+  justify-content: start;
 }
 
 
@@ -299,7 +384,7 @@ header i {
   height: 80vh;
   justify-self: center;
   position: absolute;
-  top: 28vh;
+  top: 18vh;
   display: inline-block;
 }
 
@@ -314,8 +399,8 @@ header i {
   border: 5px solid #13334d;
   font-size: 20px;
   background-color: #A2C4DF;
-  top: 15vh;
-  height: 10vh;
+  top: 5vh;
+  height: 8vh;
   width: 100%;
 }
 
@@ -324,7 +409,7 @@ header i {
 }
 
 .page .top-phisher img {
-  max-width: 50px;
+  max-width: 45px;
   display: inline;
 }
 
@@ -424,14 +509,15 @@ header i {
 
 
 .quizContainer{
-  top: 20vh;
+  top: 10vh;
   background-color: #e2f2ff;
+  position: absolute;
   padding:20px;
   height: 40vh;
   width: 80%;
   margin: 20px auto;
   max-width: 700px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -439,15 +525,17 @@ header i {
 }
 
 .quizContainer2{
-  top: 20vh;
-  background-color: #e2f2ff;
+  top: 10vh;
+  position: absolute;
+  background-color: white;
   padding:20px;
+  border: 5px solid #13334d;
   height: 40vh;
   width: 80%;
+  font-family: 'Nunito';
   margin: 20px auto;
   max-width: 700px;
-  padding-top: 20vh;
-  display: flex;
+  display: inline;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -456,12 +544,15 @@ header i {
 
 p {
   background-color: transparent;
+  padding-bottom: 10px;
 }
 
 .option {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 4px;
+  font-family: 'Nunito';
+  min-height: 55px;
   margin: 5px 0;
   background-color: #1e3751;
   color: #fff;
@@ -475,15 +566,41 @@ p {
 }
 
 #feedback {
-  margin-top: 10px;
+  bottom: 15%;
+  position: absolute;
+  background-color: #e2f2ff;
   font-weight: bold;
 }
 
+#score {
+  bottom: 40%;
+  position: absolute;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#backButton {
+  background-color: #A2C4DF;
+  color: #1d4061;
+  border: 5px solid #1d4061;
+  border: none;
+  bottom: 20%;
+  left: 30%;
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 #nextButton {
-  background-color: #593a84;
-  color: #fff;
+  background-color: #A2C4DF;
+  color: #1d4061;
+  border: 5px solid #1d4061;
   border: none;
   padding: 10px 20px;
+  position: fixed;
+  left: 30%;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
@@ -570,7 +687,7 @@ table {
   border-collapse: collapse;
   display: table;
   width: 80%;
-  top: 25vh;
+  top: 15vh;
   position: absolute;
   font-weight: bold;
 }
@@ -602,7 +719,36 @@ td {
 .page .heading {
   display: inline-flex;
   position: absolute;
-  top: 15vh;
+  width: 100%;
+  top: 4vh;
+}
+
+.page .heading .lake{
+  display: inline-flex;
+  position: absolute;
+  width: 100%;
+  top: 10vh;
+}
+
+.page .heading h1{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+}
+
+.page .heading h2{
+  display: inline;
+  position: absolute;
+  border: 4px solid #A2C4DF;
+  padding: 10px;
+  margin-top: 10%;
+}
+.page .heading .learn h2{
+  display: inline;
+  position: absolute;
+  border: 4px solid #A2C4DF;
+  padding: 5px;
+  margin-top: 0;
 }
 
 .levelBanner {
@@ -624,4 +770,18 @@ td {
 .levelBannerText{
   color: #fff;
   width: 100%; 
+}
+
+.page .extra img {
+  display: inline-block;
+  width: 40%;
+  position: fixed;
+  bottom: 18vh;
+}
+
+.page h4 {
+  bottom: 12vh;
+  display: inline-block;
+  position: fixed;
+  color: #b3bac0
 }

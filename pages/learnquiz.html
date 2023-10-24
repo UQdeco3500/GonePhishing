@@ -13,21 +13,32 @@
 <body id ="learnBody">
   <header>
     <div class="tab">
-      <h1>Level 2 - Lesson 2</h1>
+      <h1>Level 2</h1>
+      <br>
     </div>
     <br>
     <a href="profile.html"><i class="fa fa-user-circle-o"></i></a> 
   </header>
 
+  <div class="page">
+    <div class="heading">
+      <div class="learn">
+    <h2>Lesson 2</h2>
+  </div>
+  </div>
   <div class="quizContainer2">
     <div id="questionContainer">
+      <p id="score"></p>
       <p id="question"></p>
     </div>
     <div id = "answers" class="buttonGrid">
     </div>
-    <p id="feedback"></p>
+    <button id="backButton" onClick="window.location.href='learn.html';">Back to Levels</button>
     <button id="nextButton">Next Learning Task</button>
+
   </div>
+  <p id="feedback"></p>
+</div>
 
   <script src="scriptquiz.js"></script>
 

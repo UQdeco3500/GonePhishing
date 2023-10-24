@@ -67,3 +67,6 @@ function openWin() {
     popup.classList.toggle("show");
 }
 
+function activatePhish() {
+    document.getElementById("button").style.backgroundColor = "lightblue";
+}

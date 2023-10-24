@@ -27,8 +27,13 @@
     </div>
     <div class="map-container">
       <img src="assets/mapPonds.png" alt="phishmap" usemap="#map">
+      <div id="popup" style="display:none;">
+        Phish at UQ Lakes Pond?<br>
+          <button onClick="window.location.href='lake.html';">Go Phishing</button>
+          <button class="delete" onClick="document.getElementById('popup').style.display='none';">Cancel</button>
+    </div>
       <map name="map">
-        <area shape="circle" coords="270, 450, 50" href="lake.html" alt="lake">
+        <area shape="circle" coords="260, 460, 300" href="#" alt="lake" onclick="document.getElementById('popup').style.display='block';">
       </map>
 
     </div>
