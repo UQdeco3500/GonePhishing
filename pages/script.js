@@ -1,5 +1,4 @@
 //Constant Declarations
-
 const TL_button = document.getElementById('TL_button');
 const MM_button = document.getElementById('MM_button');
 const BR_button = document.getElementById('BR_button');
@@ -19,7 +18,6 @@ BR_button.addEventListener('click', function (event) {
 
 
 //Functions
-
 function handleButtonClick(buttonId) {
     switch (buttonId) {
         case 'TL_button':
@@ -42,15 +40,17 @@ function handleButtonClick(buttonId) {
     }
 }
 
-
+// displays a popup when phish is released at pond
 function releasePhish() {
     document.getElementById("myPhish").style.display = "block";
 }
 
+//cancels releasing phish
 function cancelPhish() {
     document.getElementById("myPhish").style.display = "none";
 }
 
+//changes button color when a phish is selected to be released
 function activatePhish(id) {
     document.getElementById("myPhish").style.display = "block";
     if (document.getElementById(id).style.backgroundColor == "rgb(162, 196, 223)") {
@@ -61,19 +61,13 @@ function activatePhish(id) {
     }
 } 
 
+//closes popup and alerts phish has been released 
 function byePhish() {
     alert("Your Phish is now in UQ Pond! Good luck!");
     document.getElementById("myPhish").style.display = "none";
 }
-function back() {
 
-    location.href = "phish.html";
-}
-
-function openWin() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}
+//handles loading screen and popup when user wants to phish
 function catchPhish() {
     document.getElementById("goPhish").style.display = "block";
         setTimeout(function() {
@@ -84,16 +78,19 @@ function catchPhish() {
         }, 3000);
 }
 
+//shows popup if user answered correctly
 function right() {
     document.getElementById("caught-phish").style.display = "none";
     document.getElementById("congrats").style.display = "block";
 }
 
+//shows popup if user answers incorrect
 function wrong() {
     document.getElementById("caught-phish").style.display = "none";
     document.getElementById("incorrect").style.display = "block";
 }
 
+//closes popup
 function closePopup() {
     document.getElementById("congrats").style.display = "none";
     document.getElementById("incorrect").style.display = "none";

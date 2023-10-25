@@ -1,20 +1,12 @@
+/* default styling */
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-  background-color:  #e2f2ff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e2f2ff;
 }
 
-input[type=submit] {
-  background-color: #1e3b59;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
+/* default div */
 div {
   display: flex;
   justify-content: center;
@@ -22,14 +14,14 @@ div {
 
 /* style for body text */
 body {
-    padding-top: 1;
-    margin: 0;
-    display: flex;
-    font-family: 'Nunito';
-    font-size: 26px;
-    color: #131A22;
-    text-align: center;
-    background-color: transparent;
+  padding-top: 1;
+  margin: 0;
+  display: flex;
+  font-family: 'Nunito';
+  font-size: 26px;
+  color: #131A22;
+  text-align: center;
+  background-color: transparent;
 }
 
 
@@ -37,35 +29,126 @@ body {
 /* text for titles */
 h1 {
   font-family: 'Nunito';
-    font-weight: bold;
-    color:#13334d;
-    text-decoration-color: #6595b9;
-    background-color: transparent;
-    font-size: xx-large;
-    text-align: center;
+  font-weight: bold;
+  color: #13334d;
+  text-decoration-color: #6595b9;
+  background-color: transparent;
+  font-size: xx-large;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Nunito';
-    font-style: italic;
-    color: #6595b9;
-    font-size: 36px;
-    text-align: center;
-    background-color: transparent;
+  font-style: italic;
+  color: #6595b9;
+  font-size: 36px;
+  text-align: center;
+  background-color: transparent;
 }
-
-/* text for reflection*/
 
 h3 {
   font-family: 'Nunito';
-    font-style: italic;
-    color: #13334d;
-    font-size: 40px;
-    text-align: center;
-    background-color: transparent;
+  font-style: italic;
+  color: #13334d;
+  font-size: 40px;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* header div */
+header {
+  background-color: #A2C4DF;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+  position: absolute;
+  display: flex;
+  font-size: 40px;
+  justify-content: space-between;
+}
+
+/* styles the header */
+header .tab {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  width: 60%;
+  padding: 5px;
+  display: flex;
+  flex: 1;
+  border: 5px solid #e2f2ff;
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* profile icon in header */
+header i {
+  display: flex;
+  justify-content: end;
+  width: 40%;
+  right: 0;
+  top: 35%;
+  justify-self: center;
+  padding: 20px;
+  position: absolute;
+}
+
+/* bottom navigation bar styling */
+.bottom-nav {
+  background-color: #2E495F;
+  justify-content: space-between;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+}
+
+/* icons in bottom nav */
+i {
+  background-color: transparent;
+}
+
+/* links for the bottom nav bar */
+.bottom-nav a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: #A2C4DF;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+
+/* Add an active class to highlight the current page */
+.bottom-nav a.active {
+  background-color: #76abdd;
+  color: #1e3b59;
+}
+
+/* default link color */
+a {
+  color: #1e3b59;
+}
+
+/* styles logo in landing page */
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 6%;
+  height: 6%;
+  padding: 0.5%;
+  border: #262970;
 }
 
 
+/* div for the content of a page */
 .page {
   display: inline-flex;
   align-items: center;
@@ -81,196 +164,81 @@ h3 {
   overflow-y: auto;
 }
 
-/* Add a black background color to the top navigation */
-header {
+/* div styling for content containers */
+.page .home-page {
   background-color: #A2C4DF;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 12vh;
-  position: absolute;
-  display: flex;
-  font-size: 40px;
-  justify-content: space-between;
-}
-
-header .tab {
-  bottom: 0;
-  position: absolute;
-  text-align: center;
-  height: 50%;
-  width: 60%;
-  padding: 5px;;
-  display: flex;
-  flex: 1;
-  border: 5px solid #e2f2ff;;
+  border: 10px solid #13334d;
+  width: 80%;
+  position: relative;
   border-radius: 5px;
-  border-bottom: none;
-  border-left: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 40px 0;
 }
 
-header i {
-  display: flex;
-  justify-content: end;
-  width: 40%;
-  right: 0;
-  top: 35%;
-  justify-self: center;
-  padding: 20px;
+/* home page text */
+.home-page h2 {
+  font-size: 24px;
+  color: #13334d;
+}
+
+/* styling for linked buttons on home page */
+.page .home-page button {
   position: absolute;
-}
-
-.bottom-nav {
-    background-color:#2E495F;
-    justify-content: space-between;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 8vh;
-  }
-
-  i {
-    background-color: transparent;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .bottom-nav a {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    background-color: transparent;
-    color: #A2C4DF;
-    text-align: center;
-    padding: 10px;
-    font-size: 40px;
-  }
-  
-  /* Change the color of links on hover */
-  .bottom-nav a:hover {
-    background-color:rgb(221, 185, 140);
-    color: #0e2e4b;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .bottom-nav a.active {
-    background-color: #76abdd;
-    color:#1e3b59;
-  }
-
-  a {
-    color: #1e3b59;
-  }
-
-  .logo {
-    display: inline-block;
-    vertical-align: top;
-    width: 6%;
-    height: 6%;
-    padding: 0.5%;
-    border: #262970;
-  }
-
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-  .page .home-page {
-    background-color: #A2C4DF;
-    border: 10px solid #13334d;
-    width: 80%;
-    position: relative;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 10px;
-    margin: 40px 0;
-  }
-
-  .page .home-page button {
-    position: absolute;
-    font-family:'Nunito';
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    border: 4px solid #1d4061;
-    border-radius: 10px;
-    background-color: #e2f2ff;
-    color: #1d4061;
-    padding: 4px;
-    top: 90%;
-    min-width: 40%;
-    left: 60%;
-  }
-
-  .page .home-page img {
-    padding-top: 5%;
-    width: 13vh;
-    position: relative;
-    top: 0;
-    background-color: transparent;
-  }
-
-  .page .home-page h1{
-    display: block;
-    float: inline-start;
-    position: absolute;
-    bottom: 90%;
-    padding: 2%;
-    font-size: 25px;
-    border: 8px solid #13334d;
-    background-color: #e2f2ff;
-  }
-
-  .page .home-page .user-container {
-    display: inline-block;
-    padding-top: 3px;
-    background-color: transparent;
-    text-align: center;
-    width: 100%;
-    color: #13334d;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .page .home-page .user-container img {
-    width: 40px;
-    height:fit-content;
-  }
-
-div#popup { 
-  width:200px;
-  height:130px;
-  background-color: #e2f2ff;
-  position:absolute;
-  margin-top: -50%;
-  margin-left:30%;
-  border: 4px solid #A2C4DF;
+  font-family: 'Nunito';
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  border: 4px solid #1d4061;
   border-radius: 10px;
-  padding: 5px;
+  background-color: #e2f2ff;
+  color: #1d4061;
+  padding: 4px;
+  top: 90%;
+  min-width: 40%;
+  left: 60%;
 }
 
+/* images on home page */
+.page .home-page img {
+  padding-top: 5%;
+  width: 13vh;
+  position: relative;
+  top: 0;
+  background-color: transparent;
+}
+
+/* off-center headings on content containers */
+.page .home-page h1 {
+  display: block;
+  float: inline-start;
+  position: absolute;
+  bottom: 90%;
+  padding: 2%;
+  font-size: 25px;
+  border: 8px solid #13334d;
+  background-color: #e2f2ff;
+}
+
+/* display for users in content containers */
+.page .home-page .user-container {
+  display: inline-block;
+  padding-top: 3px;
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  color: #13334d;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* user profile icons */
+.page .home-page .user-container img {
+  width: 40px;
+  height: fit-content;
+}
+
+/* button for going to pond */
 .map-container button {
   padding: 4px;
   background-color: #13334d;
@@ -279,6 +247,8 @@ div#popup {
   font-family: 'Nunito';
   border: none;
 }
+
+/* button for cancel going to pond */
 .map-container .delete {
   padding: 2px;
   background-color: #7c2134;
@@ -287,11 +257,12 @@ div#popup {
   border-radius: 10px;
 }
 
+/* fits content on the pond page */
 .page .lake-page {
   background-color: #e2f2ff;
   border: 6px solid #A2C4DF;
   width: 90%;
-  height:fit-content;
+  height: fit-content;
   position: relative;
   justify-content: center;
   border-radius: 5px;
@@ -300,6 +271,7 @@ div#popup {
   margin: 40px 0;
 }
 
+/* fits the gif for pond in page */
 .page .lake-page img {
   padding-top: 5%;
   max-width: 100%;
@@ -307,24 +279,26 @@ div#popup {
   background-color: transparent;
 }
 
+/* container for buttons */
 .lake-buttons {
   display: inline-block;
   padding: 10px;
   border: 6px solid #A2C4DF;
   border-radius: 10px;
-  justify-content: space-around; 
+  justify-content: space-around;
   min-width: 70%;
   min-height: 10%;
-  margin: 0 auto; 
+  margin: 0 auto;
   position: absolute;
   bottom: 10vh;
 }
 
+/* release button */
 .release {
   width: 40%;
   font-weight: bold;
   background-color: #A2C4DF;
-  color:#1e3751;
+  color: #1e3751;
   font-size: 20px;
   cursor: pointer;
   margin-right: 20px;
@@ -332,6 +306,7 @@ div#popup {
   border-radius: 10px;
 }
 
+/* catch button */
 .catch {
   width: 40%;
   background-color: #A2C4DF;
@@ -343,37 +318,14 @@ div#popup {
   cursor: pointer;
 }
 
-.phish-popup {
-  display:none;
-  justify-content: center;
-  top: 20%;
-  left: 10%;
-  position: fixed;
-  border: 5px solid #13334d;
-  height: auto;
-  width: 80%;
-  border-radius: 10px;
-  padding: 10px;
-  z-index: 9;
-}
-
-.phish-popup .catch {
-  min-height: 60px;
-}
-
-.phish-popup h3 {
-  font-size: 24px;
-}
-.phish-popup p {
-  font-size: 20px;
-}
-
+/* holds the message phished out */
 .phish-container {
   max-width: 100%;
   padding: 5%;
   background-color: white;
 }
 
+/* buttons for selecting phish to release */
 .phish {
   height: 60px;
   color: #13334d;
@@ -384,29 +336,24 @@ div#popup {
   font-weight: bold;
 }
 
+/* classes for which phish is selected */
 #lv1t {
   background-color: #e2f2ff;
 }
+
 #lv1e {
   background-color: #e2f2ff;
 }
+
 #lv2t {
   background-color: #e2f2ff;
-}
-#lv2t {
-  background-color: #e2f2ff;
-}
-.phish .active {
-  height: 60px;
-  color: #ffffff;
-  background-color: #1d4061;
-  font-size: 16px;
-  justify-content: space-between;
-  display: inline-flex;
-  padding-top: 10px;
-  font-weight: bold;
 }
 
+#lv2t {
+  background-color: #e2f2ff;
+}
+
+/* icons in phish selection */
 .phish i {
   display: flex;
   padding-left: 5px;
@@ -415,7 +362,7 @@ div#popup {
   justify-content: start;
 }
 
-
+/* holds the map in phish page */
 .map-container {
   width: 100%;
   height: 80vh;
@@ -425,11 +372,13 @@ div#popup {
   display: inline-block;
 }
 
+/* image used for map */
 .map-container img {
   width: 100%;
   object-fit: cover;
 }
 
+/* displays the top phisher banner */
 .page .top-phisher {
   display: inline-block;
   position: absolute;
@@ -459,18 +408,14 @@ div#popup {
   font-weight: bold;
 }
 
-.form-container input[type=text], .form-container input[type=phish] {
-  width: 100%;
-  padding: 5%;;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+/* username and password on landing page */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
+/* buttons for releasing phish popup */
 .phish-container .cancel {
   background-color: red;
   padding: 5px;
@@ -487,82 +432,48 @@ div#popup {
   width: 100%;
 }
 
+
+/* popups used when catching a phish */
+.phish-popup {
+  display: none;
+  justify-content: center;
+  top: 20%;
+  left: 10%;
+  position: fixed;
+  border: 5px solid #13334d;
+  height: auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 9;
+}
+
+/* stylings for inside caught phish popup */
+.phish-popup .catch {
+  min-height: 60px;
+}
+.phish-popup h3 {
+  font-size: 24px;
+}
+.phish-popup p {
+  font-size: 20px;
+}
 .phish-popup img {
   padding-top: 5%;
   max-width: 100%;
   top: 0;
   background-color: transparent;
 }
-
 .phish-popup i {
   font-size: 16px;
 }
 
-.sign {
-  position: absolute;
-  width: 100%;
-  height: 100;
-  padding: 5%;
-  background-color:#6595b9;
-  color:#bbd7ec;
-}
-
-.leader {
-  position: absolute;
-  display: inline-block;
-  width: 80vh;
-  height: 5vh;
-  padding: 1%;
-  justify-content: space-around;
-  background-color:#6595b9;
-  color:#214158;
-}
-
-.sign .back {
-  position: absolute;
-  width: 10%;
-  top: 10%;
-  left: 5%;
-  background-color: #bbd7ec;
-  color:#842bd8;
-  cursor: pointer;
-}
-
-.container {
-  position: fixed;
-  width:max-content;
-  justify-content: stretch;
-}
-
-.pondcontainer {
-  width: 100%;
-  height: 80vh;
-  justify-self: center;
-  display: inline-block;
-}
-
-.pondcontainer img {
-  width: fit-content;
-}
-
-.container .btn {
-  position: fixed;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #842bd8;
-  padding: 2%;
-  color: white;
-  cursor: pointer;
-}
-
-
-.quizContainer{
+/* container for questions */
+.quizContainer {
   top: 10vh;
   background-color: #e2f2ff;
   position: absolute;
-  padding:20px;
+  padding: 20px;
   height: 40vh;
   min-height: 40vh;
   width: 80%;
@@ -575,11 +486,12 @@ div#popup {
   justify-content: center;
 }
 
-.quizContainer2{
+/* container for whole quiz */
+.quizContainer2 {
   top: 10vh;
   position: absolute;
   background-color: white;
-  padding:20px;
+  padding: 20px;
   border: 5px solid #13334d;
   height: auto;
   min-height: 40vh;
@@ -594,16 +506,13 @@ div#popup {
   justify-content: center;
 }
 
+/* default text styling */
 p {
   background-color: transparent;
   padding-bottom: 10px;
 }
 
-.home-page h2 {
-  font-size: 24px;
-  color: #13334d;
-}
-
+/* answer buttons in quiz */
 .option {
   display: block;
   width: 100%;
@@ -617,19 +526,16 @@ p {
   cursor: pointer;
 }
 
-.option:hover {
-  background-color:rgb(221, 185, 140);
-  color: #1d4061;
-}
-
+/* question result */
 #feedback {
   bottom: 15%;
   position: relative;
   background-color: white;
   font-weight: bold;
-  padding: 10px;
+  padding: 3px;
 }
 
+/* quiz score */
 #score {
   bottom: 40%;
   position: absolute;
@@ -637,6 +543,7 @@ p {
   font-weight: bold;
 }
 
+/* back to learning button */
 #backButton {
   background-color: #A2C4DF;
   color: #1d4061;
@@ -651,6 +558,7 @@ p {
   margin-top: 10px;
 }
 
+/* next question button */
 #nextButton {
   background-color: #A2C4DF;
   color: #1d4061;
@@ -664,10 +572,7 @@ p {
   margin-top: 10px;
 }
 
-#nextButton:hover {
-  background-color: #272f76;
-}
-
+/* holds all the buttons in a grid */
 .buttonGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -677,15 +582,18 @@ p {
   align-items: center;
 }
 
+/* holds question text */
 #questionContainer {
   text-align: center;
   background-color: transparent;
 }
 
+/* holds a button */
 #buttonContainer {
   margin-top: 20px;
 }
 
+/* initial buttons shown */
 #first_buttons {
   position: relative;
   width: 100%;
@@ -694,6 +602,7 @@ p {
   align-items: center;
 }
 
+/* buttons for levels on learning page */
 .levelButton {
   font-size: 16px;
   height: 75px;
@@ -705,6 +614,7 @@ p {
   font-size: 20px;
 }
 
+/* locked levels */
 .levelButtonLock {
   font-size: 16px;
   height: 75px;
@@ -716,7 +626,10 @@ p {
   font-size: 20px;
 }
 
-#TL_button,#MM_button,#BR_button {
+/* extra button stylings */
+#TL_button,
+#MM_button,
+#BR_button {
   margin: 10px 0;
 }
 
@@ -732,7 +645,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #BR_button {
@@ -741,6 +654,7 @@ p {
   right: 20px;
 }
 
+/* stylings for leaderboard table */
 table {
   border-collapse: collapse;
   display: table;
@@ -771,9 +685,10 @@ td {
   background-color: #A2C4DF;
   padding: 10px;
   text-align: left;
-  color:#13334d;
+  color: #13334d;
 }
 
+/* stylings for headings in the pages */
 .page .heading {
   display: inline-flex;
   position: absolute;
@@ -781,27 +696,28 @@ td {
   top: 4vh;
 }
 
-.page .heading .lake{
+.page .heading .lake {
   display: inline-flex;
   position: absolute;
   width: 100%;
   top: 10vh;
 }
 
-.page .heading h1{
+.page .heading h1 {
   display: inline-block;
   width: 100%;
   position: absolute;
 }
 
-.page .heading h2{
+.page .heading h2 {
   display: inline;
   position: absolute;
   border: 4px solid #A2C4DF;
   padding: 10px;
   margin-top: 10%;
 }
-.page .heading .learn h2{
+
+.page .heading .learn h2 {
   display: inline;
   position: absolute;
   border: 4px solid #A2C4DF;
@@ -809,9 +725,10 @@ td {
   margin-top: 0;
 }
 
+/* banners for levels in learning page */
 .levelBanner {
   background-color: #2E495F;
-  width: 100%; 
+  width: 100%;
   border-bottom: #FFF;
   border-radius: 2px;
   border-color: #FFF;
@@ -819,17 +736,18 @@ td {
 
 .levelBannerLock {
   background-color: #8b8e91;
-  width: 100%; 
+  width: 100%;
   border-bottom: #FFF;
   border-radius: 2px;
   border-color: #FFF;
 }
 
-.levelBannerText{
+.levelBannerText {
   color: #fff;
-  width: 100%; 
+  width: 100%;
 }
 
+/* extra levels coming soon styling */
 .page .extra img {
   display: inline-block;
   width: 40%;
@@ -837,6 +755,7 @@ td {
   bottom: 18vh;
 }
 
+/* page text styling */
 .page h4 {
   bottom: 12vh;
   display: inline-block;
@@ -844,6 +763,7 @@ td {
   color: #b3bac0
 }
 
+/* email page stylings */
 .page .email-page {
   background-color: #A2C4DF;
   border: 10px solid #13334d;
@@ -855,7 +775,7 @@ td {
   margin: 40px 0;
 }
 
-.page .email-page h1{
+.page .email-page h1 {
   display: block;
   float: inline-start;
   position: absolute;
