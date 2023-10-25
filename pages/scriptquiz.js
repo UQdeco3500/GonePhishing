@@ -9,6 +9,11 @@ const questions = [
         options: ["CLICK THE LINK!", "Ponder what you will do with the money", "Delete the text, it is probably a scam", "Celebrate! You just won the lottery!"],
         correctAnswer: "Delete the text, it is probably a scam",
     },
+    {
+        question: "If you receive an email regarding you signing up for something but you didn't sign up for it",
+        options: ["Not open it, you didn't sign up for it", "Free goodies are always good", "Sign up, love more emails", "Ignore it"],
+        correctAnswer: "Not open it, you didn't sign up for it",
+    },
 ];
 
 let currentQuestionIndex = 0;
