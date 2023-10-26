@@ -1,3 +1,5 @@
+
+//Declaration of questions for quiz
 const questions = [
     {
         question: "How can you detect a phishing attempt from the text?",
@@ -16,8 +18,10 @@ const questions = [
     },
 ];
 
+// Current question index
 let currentQuestionIndex = 0;
 
+//Get each element from .html by id so can write to them later
 const questionElement = document.getElementById("question");
 const optionsContainer = document.getElementById("answers");
 const feedbackElement = document.getElementById("feedback");
@@ -27,6 +31,7 @@ const backButton = document.getElementById("backButton");
 
 var score = 0;
 
+//Gets the current question and writes the options to the given html elements
 function loadQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
@@ -41,6 +46,7 @@ function loadQuestion() {
     });
 }
 
+//Check the answered option if it is correct, provide feedback
 function checkAnswer(selectedOption) {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedOption === currentQuestion.correctAnswer) {
@@ -54,6 +60,7 @@ function checkAnswer(selectedOption) {
     backButton.style.display = "none";
 }
 
+//Load next question
 function nextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -71,5 +78,6 @@ function nextQuestion() {
     }
 }
 
+//Runs when html file is launched to initally load question
 loadQuestion();
 nextButton.addEventListener("click", nextQuestion);

@@ -1,9 +1,9 @@
-//Constant Declarations
+//Constant Declarations for learn.html
 const TL_button = document.getElementById('TL_button');
 const MM_button = document.getElementById('MM_button');
 const BR_button = document.getElementById('BR_button');
 
-// Add event listeners to the buttons
+// Add event listeners to the buttons for learn.html
 TL_button.addEventListener('click', function (event) {
     handleButtonClick('TL_button');
 });
@@ -17,7 +17,7 @@ BR_button.addEventListener('click', function (event) {
 });
 
 
-//Functions
+//Handle buttons being clicked and doing appropriate response
 function handleButtonClick(buttonId) {
     switch (buttonId) {
         case 'TL_button':
