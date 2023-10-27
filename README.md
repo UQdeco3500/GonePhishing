@@ -4,6 +4,7 @@ Our prototype is a website based application. To run the application, download t
 Note: the app is styled for phones, so it will show best using developer tools and setting the dimensions to a phone.
 ***
 ## Link To Project Proposal
+https://1drv.ms/p/s!AqAd0Kv1AQpzgu5hwHjeag9efF2zqQ?e=7J9xxI
 
 ## Link to Design Process Overview
 https://github.com/UQdeco3500/GonePhishing/wiki/Design-Process
