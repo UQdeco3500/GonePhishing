@@ -5,9 +5,8 @@ Note: the app is styled for phones, so it will show best using developer tools a
 ***
 ## Link To Project Proposal
 
-
 ## Link to Design Process Overview
-
+https://github.com/UQdeco3500/GonePhishing/wiki/Design-Process
 
 ## Link to Working Prototype, Promotional Material, and Documentation  
 
