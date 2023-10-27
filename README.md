@@ -1,7 +1,10 @@
 # How To Catch A Phish
 ***
+Our prototype is a website based application. To run the application, launch it from the index.html file to begin on the login page (no login is required).
+Note: the app is styled for phones, so it will show best using developer tools and setting the dimensions to a phone.
+***
 ## Link To Project Proposal
-link to wiki page here containing proposal slides
+
 
 ## Link to Design Process Overview
 
